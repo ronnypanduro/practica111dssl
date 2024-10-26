@@ -1,7 +1,7 @@
 const express = require('express');
+require('dotenv').config();
 const userController = require('./controllers/userController')
 
-require('dotenv').config();
 const app = express();
 app.use(express.json);
 app.use('/api/users', userController);
